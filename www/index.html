@@ -7,7 +7,7 @@
  <script type="text/javascript">
  $(document).ready(function() {
  
- setInterval(function(){  $.getJSON("http://nimblerest.lisuns.com:4531/GetLastQuoteArray/?accessKey=a1846a4e-c48b-4799-9ffa-0deef91569a4&exchange=MCX&instrumentIdentifiers=FUTCOM_SILVERM_30NOV2016__0+FUTCOM_GOLD_05DEC2016__0+FUTCOM_ZINC_30NOV2016__0+FUTCOM_CRUDEOIL_19DEC2016__0&json=true",function(result){  
+ setInterval(function(){  $.getJSON("http://nimblerest.lisuns.com:4531/GetLastQuoteArray/?accessKey=test&exchange=MCX&instrumentIdentifiers=FUTCOM_SILVERM_30NOV2016__0+FUTCOM_GOLD_05DEC2016__0+FUTCOM_ZINC_30NOV2016__0+FUTCOM_CRUDEOIL_19DEC2016__0&json=true",function(result){  
   $.each(result, function(i, field){
 	  		$("#"+field.INSTRUMENTIDENTIFIER).html(field.LASTTRADEPRICE);
  		});
